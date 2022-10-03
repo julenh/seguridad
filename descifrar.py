@@ -22,7 +22,7 @@ mACifrar = {
 CifrarAM = {v: k for k, v in mACifrar.items()}
 alfabeto = "qwertyuiopasdfghjklñzxcvbnm"
 
-mensaje = input("mensaje a descifrar ")
+mensaje = input("introduce  el mensaje a descifrar ")
 mensaje = mensaje.lower()
 cifrado = ""
 
@@ -41,7 +41,7 @@ for c in cifrado:
             letras.append(c)
 
 freqLetra = []
-for c letras:
+for c in letras:
     freqLetra.append([round(cifrado.count(c) / longitud * 100, 2), c])
 
 freqLetra = sorted(freqLetra, key=itemgetter(0), reverse=True)
@@ -52,4 +52,4 @@ for f, c in freqLetra:
     textoDescifrado = textoDescifrado.replace(c, frecuencias[index][1])
     index += 1
 
-print("\n Texto descifrado \n\".format(textoDescifrado))
+print("\n Texto descifrado \n"+textoDescifrado)
